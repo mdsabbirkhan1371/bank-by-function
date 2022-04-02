@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-5xl text-center mt-11">This is Our <span class="text-green-600 font-medium">Banking Site</span>
+        </h1>
+    </header>
+    <section class="mt-8">
+        <div class="grid grid-cols-3  gap-4 w-3/4 mx-auto text-white">
+            <div class="bg-cyan-400 p-8 rounded ">
+                <h3 class="text-2xl">Deposit</h3>
+                <h4 class="text-4xl">$<span id="deposit-total">00</span></h2>
+            </div>
+            <div class="bg-yellow-300 p-8 rounded ">
+                <h3 class="text-2xl">Widthdraw</h3>
+                <h4 class="text-4xl">$<span id="widthdraw-total">00</span></h2>
+            </div>
+            <div class="bg-green-400 p-8 rounded">
+                <h3 class="text-2xl">Balance</h3>
+                <h4 class="text-4xl">$ <span id="balance-total">1200</span> </h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- deposit and Widthdraw section -->
+
+    <section class="mt-8">
+        <div class="grid grid-cols-2  gap-4 w-3/4 mx-auto">
+
+            <div class="bg-pink-400 rounded p-8 ">
+                <h3 class="text-2xl mb-3 border-rose-800">Deposit Here</h3>
+                <input id="deposit-input" class="block p-2 rounded mb-2" type="text"
+                    placeholder="$ Enter Deposit Amount">
+                <button id="deposit-button" class="bg-red-500 px-7 py-3 rounded ">Deposit</button>
+            </div>
+            <div class="bg-purple-500  rounded p-8 ">
+                <h3 class="text-2xl mb-3 border-rose-800">Widthdraw Here</h3>
+                <input id="widthdraw-input" class="block p-2 rounded mb-2" type="text"
+                    placeholder="$ Enter Deposit Amount">
+                <button id="widthdraw-button" class="bg-red-500 px-7 py-3 rounded ">Deposit</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/banking.js"></script>
+
+</body>
+
+</html>
